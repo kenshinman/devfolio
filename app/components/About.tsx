@@ -23,7 +23,7 @@ const About: React.FC<AboutProps> = ({isDarkMode}) => {
         </div>
 
         <div className="flex-1">
-          <p className="mb-10 max-w-2xl font-Ovo">{profile.summary}</p>
+          <p className="mb-10 max-w-2xl font-Ovo">{profile.about}</p>
 
           <ul className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl">
             {skills.languagesAndFrameworks.map(({name, icon}, index) => (

@@ -53,42 +53,60 @@ const Navbar: React.FC<NavbarProps> = ({isDarkMode, setIsDarkMode}) => {
       </div>
 
       <nav
-        className={`w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50 ${
+        className={`w-full fixed px-5 lg:px-8 xl:px-[8%] flex items-center justify-between z-50 transition-all duration-300 ${
           isScroll
-            ? "bg-white bg-opacity-50 backdrop-blur-lg shadow-md dark:bg-darkTheme dark:shadow-white/20"
-            : ""
+            ? "py-1 bg-white/20 backdrop-blur-md shadow-md dark:bg-darkTheme/20 dark:shadow-white/20"
+            : "py-2"
         }`}
       >
         <a href="#top">
           <Image
             src={isDarkMode ? assets.logo_dark : assets.logo}
-            className="w-28 cursor-pointer mr-14"
+            className={`cursor-pointer mr-14 transition-all duration-300 ${
+              isScroll ? "w-24" : "w-32"
+            }`}
             alt="logo"
-          ></Image>
+            width={isScroll ? 96 : 128}
+            height={isScroll ? 19 : 26}
+          />
         </a>
 
         <ul
-          className={`hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3
-            ${
-              isScroll
-                ? ""
-                : "bg-white shadow-sm bg-opacity-50 dark:border dark:border-white/50 dark:bg-transparent"
-            } `}
+          className={`hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 transition-all duration-300 ${
+            isScroll
+              ? "py-1"
+              : "py-2 bg-white shadow-sm bg-opacity-50 dark:border dark:border-white/50 dark:bg-transparent"
+          } `}
         >
           <li>
-            <a className="font-Ovo" href="#top">
+            <a
+              className={`font-Ovo transition-all duration-300 ${
+                isScroll ? "text-shadow-sm" : ""
+              }`}
+              href="#top"
+            >
               Home
             </a>
           </li>
           {/* <li><a className='font-Ovo' href="#about">About me</a></li>
                     <li><a className='font-Ovo' href="#services">Services</a></li> */}
           <li>
-            <a className="font-Ovo" href="#work">
+            <a
+              className={`font-Ovo transition-all duration-300 ${
+                isScroll ? "text-shadow-sm" : ""
+              }`}
+              href="#work"
+            >
               My Work
             </a>
           </li>
           <li>
-            <a className="font-Ovo" href="#contact">
+            <a
+              className={`font-Ovo transition-all duration-300 ${
+                isScroll ? "text-shadow-sm" : ""
+              }`}
+              href="#contact"
+            >
               Contact me
             </a>
           </li>
@@ -98,20 +116,25 @@ const Navbar: React.FC<NavbarProps> = ({isDarkMode, setIsDarkMode}) => {
           <button onClick={() => setIsDarkMode((prev) => !prev)}>
             <Image
               src={isDarkMode ? assets.sun_icon : assets.moon_icon}
-              className="w-6 cursor-pointer "
+              className={`cursor-pointer transition-all duration-300 ${
+                isScroll ? "w-4" : "w-5"
+              }`}
               alt="moon icon"
             ></Image>
           </button>
 
           <a
             href="#contact"
-            className="hidden lg:flex items-center gap-3 px-10
-                        py-2.5 border border-gray-500 rounded-full ml-4 font-Ovo  dark:border-white/50"
+            className={`hidden lg:flex items-center gap-3 border border-gray-500 rounded-full ml-4 font-Ovo dark:border-white/50 transition-all duration-300 ${
+              isScroll ? "px-4 py-1" : "px-6 py-1.5"
+            }`}
           >
             Contact
             <Image
               src={isDarkMode ? assets.arrow_icon_dark : assets.arrow_icon}
-              className="w-3"
+              className={`transition-all duration-300 ${
+                isScroll ? "w-2" : "w-2.5"
+              }`}
               alt="arrow icon"
             ></Image>
           </a>
@@ -119,7 +142,9 @@ const Navbar: React.FC<NavbarProps> = ({isDarkMode, setIsDarkMode}) => {
           <button className="block md:hidden ml-3" onClick={openMenu}>
             <Image
               src={isDarkMode ? assets.menu_white : assets.menu_black}
-              className="w-6 cursor-pointer "
+              className={`cursor-pointer transition-all duration-300 ${
+                isScroll ? "w-4" : "w-5"
+              }`}
               alt="moon icon"
             ></Image>
           </button>

@@ -14,7 +14,9 @@ const Footer: React.FC<FooterProps> = ({isDarkMode}) => {
         <Image
           src={isDarkMode ? assets.logo_dark : assets.logo}
           alt="Logo"
-          className="w-36 mx-auto mb-2"
+          className="w-48 mx-auto mb-2"
+          width={192}
+          height={38}
         />
 
         <div className="flex items-center gap-2 mx-auto w-max text-center">
@@ -23,7 +25,12 @@ const Footer: React.FC<FooterProps> = ({isDarkMode}) => {
             alt="Mail Icon"
             className="w-6"
           />
-          <p className="dark:text-white/90">{contact.email}</p>
+          <a
+            href={`mailto:${contact.email}`}
+            className="dark:text-white/90 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+          >
+            {contact.email}
+          </a>
         </div>
       </div>
 

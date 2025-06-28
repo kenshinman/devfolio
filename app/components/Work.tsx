@@ -3,6 +3,7 @@ import Image from "next/image";
 import React, {useState} from "react";
 import {portfolio} from "../data";
 import PortfolioModal from "./PortfolioModal";
+import {ZoomIn} from "lucide-react";
 
 interface WorkProps {
   isDarkMode: boolean;
@@ -39,34 +40,46 @@ export const Work: React.FC<WorkProps> = ({isDarkMode}) => {
           Welcome to my portfolio, here is a few of my recent work.
         </p>
 
-        <div className="grid grid-cols-auto my-10 gap-5 dark:text-black">
+        <div className="grid grid-cols-1 md:grid-cols-3 xl:grid-cols-4 my-10 gap-6">
           {portfolio.map((project, index) => (
             <div
               key={index}
-              className="aspect-square bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group"
-              style={{backgroundImage: `url(${project.images[0]})`}}
+              className="bg-gray-800 rounded-lg shadow-lg overflow-hidden cursor-pointer group hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-700"
               onClick={() => openModal(project)}
             >
-              <div
-                className="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3  px-5 flex 
-                          items-center justify-between duration-500 group-hover:bottom-7"
-              >
-                <div className="">
-                  <h2 className="font-semibold">{project.project}</h2>
-                  <p className="text-sm text-gray-700">{project.description}</p>
-                </div>
-                <div className="hidden group-hover:flex">
-                  <div
-                    className="border rounded-full border-black w-9 
-                                aspect-square flex items-center justify-center shadow-[2px_2px_0_#000]
-                                group-hover:bg-lime-300 transition"
-                  >
-                    <Image
-                      src={assets.send_icon}
-                      alt="send icon"
-                      className="w-5"
-                    />
+              {/* Image at the top */}
+              <div className="relative h-48 overflow-hidden">
+                <Image
+                  src={project.images[0]}
+                  alt={project.project}
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+                {/* Overlay with zoom icon */}
+                <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300 flex items-center justify-center">
+                  <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <ZoomIn className="w-8 h-8 text-white" />
                   </div>
+                </div>
+              </div>
+
+              {/* Content at the bottom */}
+              <div className="px-4 py-6">
+                <h3 className="font-semibold text-lg mb-2 text-white">
+                  {project.project}
+                </h3>
+                <p className="text-sm text-gray-300 mb-4 line-clamp-2">
+                  {project.description}
+                </p>
+
+                {/* CTA Button */}
+                <div className="flex items-center justify-between">
+                  <span className="text-xs text-gray-400">
+                    {project.location} • {project.date}
+                  </span>
+                  <button className="flex items-center justify-center w-12 h-12 bg-transparent border border-gray-600 text-gray-300 rounded-full hover:bg-gray-700 hover:border-gray-500 transition-colors">
+                    <ZoomIn className="w-6 h-6" strokeWidth={1.5} />
+                  </button>
                 </div>
               </div>
             </div>
