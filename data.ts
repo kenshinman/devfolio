@@ -44,7 +44,7 @@ export const experience = [
     bullets: [
       "Architected projects and improved dev efficiency by 20%.",
       "Created reusable frontend boilerplates and design systems.",
-      "Led development of Softcom’s ERP (LEAP) with Firebase + React.",
+      "Led development of Softcom's ERP (LEAP) with Firebase + React.",
       "Optimized app performance and bundle sizes by over 95%.",
       "Taught team SSR in React to boost SEO.",
       "Mentored engineers and collaborated with design/product."
@@ -86,12 +86,19 @@ export const portfolio = [
   {
     project: "Autochek Africa",
     url: "https://autochek.africa",
+    gitRepo: "https://github.com/autochek/autochek-africa",
     location: "Lagos, Nigeria",
     date: "Jun 2019 – Nov 2019",
     description: "Led frontend team to build Autochek Africa from scratch using Next.js and Node.js.",
+    images: [
+      "/work-1.png",
+      "/work-2.png",
+      "/work-3.png",
+      "/work-4.png"
+    ],
     highlights: [
       "Built shared frontend infrastructure, component libraries, and CI/CD tooling.",
-      "Implemented SEO optimizations that ranked pages in Google’s top 2 organic results.",
+      "Implemented SEO optimizations that ranked pages in Google's top 2 organic results.",
       "Modernized legacy codebase and introduced developer-friendly tooling.",
       "Contributed to frontend architecture reviews and planning."
     ]
@@ -102,6 +109,11 @@ export const portfolio = [
     location: "Toronto, Canada",
     date: "2022 – 2025",
     description: "Migrated marketing and shopping experiences to a modern frontend stack using Next.js.",
+    images: [
+      "/work-2.png",
+      "/work-1.png",
+      "/work-3.png"
+    ],
     highlights: [
       "Enhanced SEO, page speed and reduced bounce rate significantly.",
       "Implemented WCAG-compliant components and integrated analytics.",
@@ -111,9 +123,15 @@ export const portfolio = [
   {
     project: "Podopolo",
     url: "https://podopolo.com",
+    gitRepo: "https://github.com/podopolo/app",
     location: "Remote",
     date: "2021",
     description: "Built a next-gen podcasting mobile app with React Native for Modus Create.",
+    images: [
+      "/work-3.png",
+      "/work-4.png",
+      "/work-1.png"
+    ],
     highlights: [
       "Collaborated cross-functionally to deliver end-to-end user features.",
       "Implemented Storybook for improved component development.",
@@ -123,9 +141,16 @@ export const portfolio = [
   {
     project: "Bundul",
     url: "https://bundul.io",
+    gitRepo: "https://github.com/bundul/bundul-app",
     location: "Remote",
     date: "2020 – Present",
     description: "Built and deployed Bundul from scratch using React Native, Expo, and TypeScript.",
+    images: [
+      "/work-4.png",
+      "/work-2.png",
+      "/work-1.png",
+      "/work-3.png"
+    ],
     highlights: [
       "Designed app architecture and built all frontend features from the ground up.",
       "Integrated APIs, payment, authentication, and analytics.",
