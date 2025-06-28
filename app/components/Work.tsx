@@ -1,7 +1,7 @@
-import {assets} from "@/assets/assets";
+import {assets} from "@/app/assets/assets";
 import Image from "next/image";
 import React, {useState} from "react";
-import {portfolio} from "../../data";
+import {portfolio} from "../data";
 import PortfolioModal from "./PortfolioModal";
 
 interface WorkProps {

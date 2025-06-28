@@ -1,8 +1,8 @@
-import {assets} from "@/assets/assets";
+import {assets} from "@/app/assets/assets";
 import Image from "next/image";
 import React from "react";
 import {motion} from "motion/react";
-import {profile} from "../../data";
+import {profile} from "../data";
 
 interface HeaderProps {
   isDarkMode: boolean;
@@ -22,6 +22,8 @@ const Header: React.FC<HeaderProps> = ({isDarkMode}) => {
         <Image
           src={assets.profile_img}
           alt="profile imgage"
+          height={128}
+          width={128}
           className="rounded-full w-32"
         ></Image>
       </motion.div>

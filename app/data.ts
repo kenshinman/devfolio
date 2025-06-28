@@ -1,3 +1,5 @@
+import { IMAGE_URL } from "./components/constants";
+
 export const profile = {
   name: "Kehinde Orilogbon",
   title: "Senior Frontend Engineer",
@@ -110,9 +112,11 @@ export const portfolio = [
     date: "2022 – 2025",
     description: "Migrated marketing and shopping experiences to a modern frontend stack using Next.js.",
     images: [
-      "/work-2.png",
-      "/work-1.png",
-      "/work-3.png"
+      `${IMAGE_URL}/flipgive/1.png`,
+      `${IMAGE_URL}/flipgive/2.png`,
+      `${IMAGE_URL}/flipgive/3.png`,
+      `${IMAGE_URL}/flipgive/4.png`,
+      `${IMAGE_URL}/flipgive/5.png`,
     ],
     highlights: [
       "Enhanced SEO, page speed and reduced bounce rate significantly.",

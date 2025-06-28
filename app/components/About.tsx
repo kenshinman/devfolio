@@ -1,7 +1,7 @@
-import {assets} from "@/assets/assets";
+import {assets} from "@/app/assets/assets";
 import Image from "next/image";
 import React from "react";
-import {profile, skills, tools, education, experience} from "../../data";
+import {profile, skills, tools, education, experience} from "../data";
 
 interface AboutProps {
   isDarkMode: boolean;

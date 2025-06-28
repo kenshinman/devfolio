@@ -1,0 +1,1 @@
+export const IMAGE_URL = "https://cdn.statically.io/gh/kenshinman/portfolio-img/main/images";

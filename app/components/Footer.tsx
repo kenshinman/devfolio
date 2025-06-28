@@ -1,7 +1,7 @@
-import {assets} from "@/assets/assets";
+import {assets} from "@/app/assets/assets";
 import Image from "next/image";
 import React from "react";
-import {contact, links, profile} from "../../data";
+import {contact, links, profile} from "../data";
 
 interface FooterProps {
   isDarkMode: boolean;

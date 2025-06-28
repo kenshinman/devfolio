@@ -54,7 +54,7 @@ export const assets = {
   logo_dark,
   mail_icon,
   mail_icon_dark,
-  profile_img,
+  profile_img: "https://cdn.statically.io/gh/kenshinman/portfolio-img/main/images/avatar-1.png",
   download_icon,
   hand_icon,
   header_bg_color,
