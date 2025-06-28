@@ -82,7 +82,7 @@ const Header: React.FC<HeaderProps> = ({isDarkMode}) => {
           initial={{opacity: 0, y: 30}}
           whileInView={{opacity: 1, y: 0}}
           transition={{duration: 0.6, delay: 1.2}}
-          href="/joshua.pdf"
+          href="/kehinde_fe_resume.pdf"
           download
           className="px-10 py-3 border rounded-full border-gray-500 flex items-center gap-2 bg-white dark:text-black"
         >

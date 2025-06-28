@@ -4,7 +4,7 @@ export const profile = {
   name: "Kehinde Orilogbon",
   title: "Senior Frontend Engineer",
   summary:
-    "I’m a Senior Frontend Engineer based in Toronto with over 10 years of experience building scalable, high-performance web and mobile applications using React, TypeScript, and Next.js.",
+    "I'm a Senior Frontend Engineer based in Toronto with over 10 years of experience building scalable, high-performance web and mobile applications using React, TypeScript, and Next.js.",
   about:
     "Senior Front End Engineer with 10+ years of experience architecting scalable, maintainable, and high-performance web and mobile applications. Deep expertise in JavaScript/TypeScript, React, and Next.js, with a strong focus on frontend architecture, state management, and responsive UI. Proven ability to deliver user-centric features, optimize performance, and collaborate cross-functionally. Passionate about code quality, accessibility (WCAG compliance), and continuous improvement through emerging frontend technologies."
 };
@@ -95,10 +95,12 @@ export const portfolio = [
     date: "Jun 2019 – Nov 2019",
     description: "Led frontend team to build Autochek Africa from scratch using Next.js and Node.js.",
     images: [
-      "/work-1.png",
-      "/work-2.png",
-      "/work-3.png",
-      "/work-4.png"
+      `${IMAGE_URL}/autochek/1.png`,
+      `${IMAGE_URL}/autochek/2.png`,
+      `${IMAGE_URL}/autochek/3.png`,
+      `${IMAGE_URL}/autochek/4.png`,
+      `${IMAGE_URL}/autochek/5.png`,
+      `${IMAGE_URL}/autochek/6.png`
     ],
     highlights: [
       "Built shared frontend infrastructure, component libraries, and CI/CD tooling.",
@@ -134,9 +136,11 @@ export const portfolio = [
     date: "2021",
     description: "Built a next-gen podcasting mobile app with React Native for Modus Create.",
     images: [
-      "/work-3.png",
-      "/work-4.png",
-      "/work-1.png"
+      `${IMAGE_URL}/podopolo/1.webp`,
+      `${IMAGE_URL}/podopolo/2.webp`,
+      `${IMAGE_URL}/podopolo/3.webp`,
+      `${IMAGE_URL}/podopolo/4.webp`,
+      `${IMAGE_URL}/podopolo/5.webp`
     ],
     highlights: [
       "Collaborated cross-functionally to deliver end-to-end user features.",
