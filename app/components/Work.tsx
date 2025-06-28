@@ -1,7 +1,8 @@
-import {assets, workData} from "@/assets/assets";
+import {assets} from "@/assets/assets";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import {portfolio} from "../../data";
 
 interface WorkProps {
   isDarkMode: boolean;
@@ -18,23 +19,23 @@ export const Work: React.FC<WorkProps> = ({isDarkMode}) => {
       </p>
 
       <div className="grid grid-cols-auto my-10 gap-5 dark:text-black">
-        {workData.map((project, index) => (
+        {portfolio.map((project, index) => (
           <div
             key={index}
             className="aspect-square bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group"
-            style={{backgroundImage: `url(${project.bgImage})`}}
+            style={{backgroundImage: `url(/work-${(index % 4) + 1}.png)`}}
           >
             <div
               className="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3  px-5 flex 
                         items-center justify-between duration-500 group-hover:bottom-7"
             >
               <div className="">
-                <h2 className="font-semibold">{project.title}</h2>
+                <h2 className="font-semibold">{project.project}</h2>
                 <p className="text-sm text-gray-700">{project.description}</p>
               </div>
-              {project.link && (
+              {project.url && (
                 <Link
-                  href={project.link || "#"}
+                  href={project.url || "#"}
                   target="_blank"
                   className="hidden group-hover:flex"
                 >

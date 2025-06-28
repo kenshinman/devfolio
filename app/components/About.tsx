@@ -1,6 +1,7 @@
-import {assets, infoList, toolsData} from "@/assets/assets";
+import {assets} from "@/assets/assets";
 import Image from "next/image";
 import React from "react";
+import {profile, skills, tools, education, experience} from "../../data";
 
 interface AboutProps {
   isDarkMode: boolean;
@@ -22,17 +23,10 @@ const About: React.FC<AboutProps> = ({isDarkMode}) => {
         </div>
 
         <div className="flex-1">
-          <p className="mb-10 max-w-2xl font-Ovo">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut delectus
-            maxime officia et labore ipsa ipsam error iusto repellat non
-            praesentium accusantium similique assumenda ducimus totam, hic eos
-            inventore aliquid, est id sed ratione. Quas, inventore quasi? Quas
-            accusamus, voluptas doloribus temporibus dolorem animi, molestias id
-            cum soluta voluptate quod!
-          </p>
+          <p className="mb-10 max-w-2xl font-Ovo">{profile.summary}</p>
 
           <ul className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl">
-            {infoList.map(({icon, iconDark, title, description}, index) => (
+            {skills.languagesAndFrameworks.map(({name, icon}, index) => (
               <li
                 key={index}
                 className="
@@ -51,18 +45,11 @@ const About: React.FC<AboutProps> = ({isDarkMode}) => {
                               dark:hover:bg-darkHover/50
                                   "
               >
-                <Image
-                  src={isDarkMode ? iconDark : icon}
-                  alt={title}
-                  className="w-7 mt-3"
-                ></Image>
+                {/* Replace with icon logic if you have icons */}
+                <div className="w-7 mt-3">{icon}</div>
                 <h3 className="my-4 font-semibold text-gray-700 dark:text-white">
-                  {title}
+                  {name}
                 </h3>
-                <p className="text-gray-600 text-sm dark:text-white/80">
-                  {" "}
-                  {description}
-                </p>
               </li>
             ))}
           </ul>
@@ -72,7 +59,7 @@ const About: React.FC<AboutProps> = ({isDarkMode}) => {
           </h4>
 
           <ul className="flex items-center gap-3 sm:gap-5">
-            {toolsData.map((tool, index) => (
+            {tools.map((tool, index) => (
               <li
                 key={index}
                 className="
@@ -90,7 +77,8 @@ const About: React.FC<AboutProps> = ({isDarkMode}) => {
                         duration-300
                         "
               >
-                <Image src={tool} alt="Tool" className="w-5 sm:w-7" />
+                {/* Replace with icon logic if you have icons */}
+                <div className="w-5 sm:w-7">{tool.icon}</div>
               </li>
             ))}
           </ul>

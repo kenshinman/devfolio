@@ -41,7 +41,7 @@ export default function RootLayout({children}: RootLayoutProps) {
         className={`${outfit.className} ${ovo.className} 
         antialiased 
         leading-8 
-        owerflow-x-hidden 
+        overflow-x-hidden 
         dark:bg-darkTheme
         dark:text-white
         `}
