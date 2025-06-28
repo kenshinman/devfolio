@@ -1,0 +1,104 @@
+{
+  "designSystem": {
+    "name": "DarkNeo Minimalist",
+    "theme": {
+      "mode": "dark",
+      "backgroundColor": "#0C021C",
+      "primaryColor": "#A76EFF",
+      "secondaryColor": "#FFFFFF",
+      "accentColor": "#6341EF",
+      "hoverColor": "#1D082F",
+      "textColorPrimary": "#FFFFFF",
+      "textColorSecondary": "#B0AFC1",
+      "glowEffectColor": "#8B5CF6",
+      "shadowColor": "rgba(167, 110, 255, 0.25)"
+    },
+    "typography": {
+      "fontFamily": "'Inter', sans-serif",
+      "headingFontWeight": "600",
+      "bodyFontWeight": "400",
+      "headingSizes": {
+        "h1": "2.5rem",
+        "h2": "2rem",
+        "h3": "1.5rem"
+      },
+      "bodyTextSize": "1rem",
+      "lineHeight": "1.6",
+      "letterSpacing": "0.02em",
+      "monospaceFont": "'Fira Code', monospace"
+    },
+    "layout": {
+      "maxWidth": "1200px",
+      "padding": "2rem",
+      "spacingUnit": "1rem",
+      "sectionSpacing": "6rem",
+      "alignment": "centered",
+      "gridSystem": "2-column and 4-column cards",
+      "contentWidth": "70%"
+    },
+    "components": {
+      "avatar": {
+        "style": "3D emoji-style illustration",
+        "size": "120px",
+        "borderRadius": "50%",
+        "shadow": true,
+        "glow": true
+      },
+      "buttons": {
+        "shape": "pill",
+        "hoverEffect": "glow",
+        "transition": "all 0.3s ease-in-out",
+        "variants": [
+          "primary",
+          "outline",
+          "ghost"
+        ]
+      },
+      "cards": {
+        "background": "#1E0A39",
+        "borderRadius": "16px",
+        "padding": "1.5rem",
+        "shadow": true,
+        "hoverScale": 1.03
+      },
+      "icons": {
+        "style": "simple white or neon outlines",
+        "size": "1.5rem",
+        "hoverColor": "#A76EFF"
+      },
+      "projectShowcase": {
+        "layout": "image on right or left, text on opposite side",
+        "imageEffect": "drop shadow and soft glow",
+        "titleStyle": "uppercase, small font, subtle",
+        "cardStyle": "flat wireframe-style mockups"
+      },
+      "techStack": {
+        "display": "icon row",
+        "layout": "curved arc or grid",
+        "iconSize": "24px"
+      }
+    },
+    "animation": {
+      "entrance": "fade-up with delay",
+      "hover": "scale and glow",
+      "transitionDuration": "0.3s"
+    },
+    "branding": {
+      "logoStyle": "geometric monogram with glowing ring",
+      "logoColor": "#FFFFFF",
+      "logoGlow": true
+    },
+    "footer": {
+      "background": "#0C021C",
+      "textAlign": "center",
+      "fontSize": "0.9rem",
+      "socialIcons": [
+        "github",
+        "linkedin",
+        "email",
+        "globe"
+      ],
+      "spacing": "2rem"
+    }
+  }
+}
