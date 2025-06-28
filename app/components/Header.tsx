@@ -21,7 +21,7 @@ const Header: React.FC<HeaderProps> = ({isDarkMode}) => {
       >
         <Image
           src={assets.profile_img}
-          alt="profile imgage"
+          alt="profile image"
           height={128}
           width={128}
           className="rounded-full w-32"
@@ -33,7 +33,7 @@ const Header: React.FC<HeaderProps> = ({isDarkMode}) => {
         transition={{duration: 0.6, delay: 0.3}}
         className="flex items-end gap-2 text-xl md:text-2xl mb-3 font-Ovo"
       >
-        Hi! I'm {profile.name}
+        Hi! I&apos;m {profile.name}
         <Image src={assets.hand_icon} alt="hand icon" className="w-6"></Image>
       </motion.h3>
       <motion.h1

@@ -13,8 +13,8 @@ const Services: React.FC<ServicesProps> = ({isDarkMode}) => {
       <h2 className="text-center  text-5xl font-Ovo">My Services</h2>
 
       <p className="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo">
-        I'm a frontend developer from California, USA with 10 years experience
-        in multiple companies like Microsoft, Tesla and Apple.
+        I&apos;m a frontend developer from California, USA with 10 years
+        experience in multiple companies like Microsoft, Tesla and Apple.
       </p>
 
       <div className="grid grid-cols-auto gap-6 my-10 ">
