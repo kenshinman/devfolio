@@ -2,11 +2,11 @@ import { IMAGE_URL } from "./components/constants";
 
 export const profile = {
   name: "Kehinde Orilogbon",
-  title: "Senior Frontend Engineer",
+  title: "Software Engineer",
   summary:
-    "I'm a Senior Frontend Engineer based in Toronto with over 10 years of experience building scalable, high-performance web and mobile applications using React, TypeScript, and Next.js.",
+    "I'm a Software Engineer based in Toronto with over 10 years of experience building scalable, high-performance web and mobile applications using React, TypeScript, and Next.js.",
   about:
-    "Senior Front End Engineer with 10+ years of experience architecting scalable, maintainable, and high-performance web and mobile applications. Deep expertise in JavaScript/TypeScript, React, and Next.js, with a strong focus on frontend architecture, state management, and responsive UI. Proven ability to deliver user-centric features, optimize performance, and collaborate cross-functionally. Passionate about code quality, accessibility (WCAG compliance), and continuous improvement through emerging frontend technologies."
+    "Senior Front End Engineer with 10+ years of experience building scalable, maintainable, and high-performance web and mobile applications. Deep expertise in JavaScript/TypeScript, React, and Next.js, with a strong focus on frontend architecture, state management, and responsive UI. Proven ability to deliver user-centric features, optimize performance, and collaborate cross-functionally. Passionate about code quality, accessibility (WCAG compliance), and continuous improvement through emerging frontend technologies."
 };
 
 export const experience = [
@@ -213,7 +213,7 @@ export const softSkills = [
   "Mentoring",
   "UI/UX Thinking",
   "Scalable Frontend Architecture",
-  "Performance Optimisation",
+  "Performance Optimization",
   "Design Systems"
 ];
 

@@ -13,8 +13,8 @@ const config = {
         darkTheme: "#0f0f0f",
       },
       fontFamily: {
-        Outfit: ["Outfit", "sans-serif"],
-        Ovo: ["Ovo", "serif"],
+        Inter: ["Inter", "sans-serif"],
+        Playfair: ["Playfair Display", "serif"],
       },
       boxShadow: {
         'black': '4px 4px 0 #000',

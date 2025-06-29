@@ -1,16 +1,16 @@
-import {Outfit, Ovo} from "next/font/google";
+import {Inter, Playfair_Display} from "next/font/google";
 import "./globals.css";
 import {Metadata} from "next";
 import {profile} from "./data";
 
-const outfit = Outfit({
+const inter = Inter({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
 });
 
-const ovo = Ovo({
+const playfair = Playfair_Display({
   subsets: ["latin"],
-  weight: ["400"],
+  weight: ["400", "500", "600", "700"],
 });
 
 export const metadata: Metadata = {
@@ -55,7 +55,7 @@ export default function RootLayout({children}: RootLayoutProps) {
   return (
     <html lang="en" className="scroll-smooth dark">
       <body
-        className={`${outfit.className} ${ovo.className} 
+        className={`${inter.className} ${playfair.className} 
         antialiased 
         leading-8 
         overflow-x-hidden 

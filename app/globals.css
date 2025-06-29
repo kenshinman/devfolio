@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 * {
-  font-family: Outfit;
+  font-family: Inter;
 }
 
 .transform-minus-16 {
