@@ -14,10 +14,7 @@ const Contact: React.FC<ContactProps> = ({isDarkMode}) => {
     setResult("Sending....");
     const formData = new FormData(event.currentTarget);
 
-    formData.append(
-      "access_key",
-      process.env.NEXT_PUBLIC_WEB_3_FORM_ACCESS_KEY || ""
-    );
+    formData.append("access_key", process.env.WEB_3_FORM_ACCESS_KEY || "");
 
     const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
