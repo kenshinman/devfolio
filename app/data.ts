@@ -183,7 +183,8 @@ export const skills = {
     { name: "Tailwind CSS", icon: "paintbrush" },
     { name: "jQuery", icon: "scroll" },
     { name: "Redux", icon: "repeat" },
-    { name: "React Query", icon: "search" }
+    { name: "React Query", icon: "search" },
+    { name: "Zustand", icon: "repeat" }
   ]
 };
 

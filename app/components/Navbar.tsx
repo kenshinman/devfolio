@@ -55,27 +55,27 @@ const Navbar: React.FC<NavbarProps> = ({isDarkMode, setIsDarkMode}) => {
       <nav
         className={`w-full fixed px-5 lg:px-8 xl:px-[8%] flex items-center justify-between z-50 transition-all duration-300 ${
           isScroll
-            ? "py-1 bg-white/20 backdrop-blur-md shadow-md dark:bg-darkTheme/20 dark:shadow-white/20"
-            : "py-2"
+            ? "py-4 lg:py-1 bg-white/20 backdrop-blur-md shadow-md dark:bg-darkTheme/20 dark:shadow-white/20"
+            : "py-4"
         }`}
       >
         <a href="#top">
           <Image
             src={isDarkMode ? assets.logo_dark : assets.logo}
             className={`cursor-pointer mr-14 transition-all duration-300 ${
-              isScroll ? "w-24" : "w-32"
+              isScroll ? "w-28 lg:w-16" : "w-28"
             }`}
             alt="logo"
-            width={isScroll ? 96 : 128}
-            height={isScroll ? 19 : 26}
+            width={isScroll ? 112 : 112}
+            height={isScroll ? 22 : 22}
           />
         </a>
 
         <ul
           className={`hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 transition-all duration-300 ${
             isScroll
-              ? "py-1"
-              : "py-2 bg-white shadow-sm bg-opacity-50 dark:border dark:border-white/50 dark:bg-transparent"
+              ? "py-3 lg:py-1"
+              : "py-3 bg-white shadow-sm bg-opacity-50 dark:border dark:border-white/50 dark:bg-transparent"
           } `}
         >
           <li>
@@ -105,6 +105,16 @@ const Navbar: React.FC<NavbarProps> = ({isDarkMode, setIsDarkMode}) => {
               className={`font-Ovo transition-all duration-300 ${
                 isScroll ? "text-shadow-sm" : ""
               }`}
+              href="#skills"
+            >
+              Skills
+            </a>
+          </li>
+          <li>
+            <a
+              className={`font-Ovo transition-all duration-300 ${
+                isScroll ? "text-shadow-sm" : ""
+              }`}
               href="#contact"
             >
               Contact me
@@ -117,7 +127,7 @@ const Navbar: React.FC<NavbarProps> = ({isDarkMode, setIsDarkMode}) => {
             <Image
               src={isDarkMode ? assets.sun_icon : assets.moon_icon}
               className={`cursor-pointer transition-all duration-300 ${
-                isScroll ? "w-4" : "w-5"
+                isScroll ? "w-6 lg:w-4" : "w-6"
               }`}
               alt="moon icon"
             ></Image>
@@ -126,14 +136,14 @@ const Navbar: React.FC<NavbarProps> = ({isDarkMode, setIsDarkMode}) => {
           <a
             href="#contact"
             className={`hidden lg:flex items-center gap-3 border border-gray-500 rounded-full ml-4 font-Ovo dark:border-white/50 transition-all duration-300 ${
-              isScroll ? "px-4 py-1" : "px-6 py-1.5"
+              isScroll ? "px-6 py-2 lg:px-4 lg:py-1" : "px-10 py-2.5"
             }`}
           >
             Contact
             <Image
               src={isDarkMode ? assets.arrow_icon_dark : assets.arrow_icon}
               className={`transition-all duration-300 ${
-                isScroll ? "w-2" : "w-2.5"
+                isScroll ? "w-3 lg:w-2" : "w-3"
               }`}
               alt="arrow icon"
             ></Image>
@@ -143,7 +153,7 @@ const Navbar: React.FC<NavbarProps> = ({isDarkMode, setIsDarkMode}) => {
             <Image
               src={isDarkMode ? assets.menu_white : assets.menu_black}
               className={`cursor-pointer transition-all duration-300 ${
-                isScroll ? "w-4" : "w-5"
+                isScroll ? "w-6 lg:w-4" : "w-6"
               }`}
               alt="moon icon"
             ></Image>
@@ -175,6 +185,11 @@ const Navbar: React.FC<NavbarProps> = ({isDarkMode, setIsDarkMode}) => {
           <li>
             <a className="font-Ovo" onClick={closeMenu} href="#work">
               My Work
+            </a>
+          </li>
+          <li>
+            <a className="font-Ovo" onClick={closeMenu} href="#skills">
+              Skills
             </a>
           </li>
           <li>
