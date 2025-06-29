@@ -1,6 +1,7 @@
 import {Outfit, Ovo} from "next/font/google";
 import "./globals.css";
 import {Metadata} from "next";
+import {profile} from "./data";
 
 const outfit = Outfit({
   subsets: ["latin"],
@@ -13,21 +14,37 @@ const ovo = Ovo({
 });
 
 export const metadata: Metadata = {
-  title: "Welcome to Joshua's Portfolio",
+  title: "Welcome to Kehinde's Portfolio",
   keywords: [
     "Portfolio",
     "Frontend Developer",
-    "Joshua's Portfolio",
-    "React Native",
+    "Kehinde's Portfolio",
+    "Kehinde Orilogbon's Portfolio",
+    "Kehinde Orilogbon",
+    "Kehinde",
+    "Orilogbon",
+    "Orilogbon Kehinde",
+    "Orilogbon Kehinde's Portfolio",
+    "React developer based in Toronto",
+    "Next.js developer based in Toronto",
+    "React Native developer based in Toronto",
+    "JavaScript developer based in Toronto",
+    "TypeScript developer based in Toronto",
+    "Tailwind CSS developer based in Toronto",
+    "React Query developer based in Toronto",
+    "Zustand developer based in Toronto",
+    "Web Development based in Toronto",
+    "UI/UX Design based in Toronto",
+    "Mobile App Development based in Toronto",
     "React",
     "Next.js",
+    "React Native",
     "JavaScript",
-    "Web Development",
-    "UI/UX Design",
-    "Mobile App Development",
+    "TypeScript",
+    "Tailwind CSS",
+    "React Query",
   ],
-  description:
-    "Welcome to Joshua's Portfolio, showcasing my skills as a Frontend Developer with expertise in React Native, React, Next.js, and JavaScript. Explore my projects and services in web and mobile app development, UI/UX design, and more.",
+  description: profile.summary,
 };
 
 interface RootLayoutProps {
