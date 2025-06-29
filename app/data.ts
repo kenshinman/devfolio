@@ -90,7 +90,7 @@ export const portfolio = [
   {
     project: "Autochek Africa",
     url: "https://autochek.africa",
-    gitRepo: "https://github.com/autochek/autochek-africa",
+    gitRepo: "",
     location: "Lagos, Nigeria",
     date: "Jun 2019 – Nov 2019",
     description: "Led frontend team to build Autochek Africa from scratch using Next.js and Node.js.",
@@ -118,9 +118,7 @@ export const portfolio = [
     images: [
       `${IMAGE_URL}/flipgive/1.png`,
       `${IMAGE_URL}/flipgive/2.png`,
-      `${IMAGE_URL}/flipgive/3.png`,
-      `${IMAGE_URL}/flipgive/4.png`,
-      `${IMAGE_URL}/flipgive/5.png`,
+      `${IMAGE_URL}/flipgive/3.png`
     ],
     highlights: [
       "Enhanced SEO, page speed and reduced bounce rate significantly.",
@@ -131,7 +129,7 @@ export const portfolio = [
   {
     project: "Podopolo",
     url: "https://podopolo.com",
-    gitRepo: "https://github.com/podopolo/app",
+    gitRepo: "",
     location: "Remote",
     date: "2021",
     description: "Built a next-gen podcasting mobile app with React Native for Modus Create.",
@@ -151,15 +149,16 @@ export const portfolio = [
   {
     project: "Bundul",
     url: "https://bundul.io",
-    gitRepo: "https://github.com/bundul/bundul-app",
+    gitRepo: "",
     location: "Remote",
     date: "2020 – Present",
     description: "Built and deployed Bundul from scratch using React Native, Expo, and TypeScript.",
     images: [
-      "/work-4.png",
-      "/work-2.png",
-      "/work-1.png",
-      "/work-3.png"
+      `${IMAGE_URL}/bundul/1.webp`,
+      `${IMAGE_URL}/bundul/2.webp`,
+      `${IMAGE_URL}/bundul/3.webp`,
+      `${IMAGE_URL}/bundul/4.webp`,
+      `${IMAGE_URL}/bundul/5.webp`
     ],
     highlights: [
       "Designed app architecture and built all frontend features from the ground up.",
