@@ -110,7 +110,7 @@ export const portfolio = [
     ]
   },
   {
-    project: "FlipGive Shop",
+    project: "FlipGive",
     url: "https://shop.flipgive.com",
     location: "Toronto, Canada",
     date: "2022 – 2025",
