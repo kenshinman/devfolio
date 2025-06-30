@@ -80,7 +80,7 @@ const Navbar: React.FC<NavbarProps> = ({isDarkMode, setIsDarkMode}) => {
         >
           <li>
             <a
-              className={`font-Playfair transition-all duration-300 ${
+              className={`transition-all duration-300 ${
                 isScroll ? "text-shadow-sm" : ""
               }`}
               href="#top"
@@ -92,7 +92,7 @@ const Navbar: React.FC<NavbarProps> = ({isDarkMode, setIsDarkMode}) => {
                     <li><a className='font-Ovo' href="#services">Services</a></li> */}
           <li>
             <a
-              className={`font-Playfair transition-all duration-300 ${
+              className={`transition-all duration-300 ${
                 isScroll ? "text-shadow-sm" : ""
               }`}
               href="#work"
@@ -102,7 +102,7 @@ const Navbar: React.FC<NavbarProps> = ({isDarkMode, setIsDarkMode}) => {
           </li>
           <li>
             <a
-              className={`font-Playfair transition-all duration-300 ${
+              className={`transition-all duration-300 ${
                 isScroll ? "text-shadow-sm" : ""
               }`}
               href="#skills"
@@ -112,7 +112,7 @@ const Navbar: React.FC<NavbarProps> = ({isDarkMode, setIsDarkMode}) => {
           </li>
           <li>
             <a
-              className={`font-Playfair transition-all duration-300 ${
+              className={`transition-all duration-300 ${
                 isScroll ? "text-shadow-sm" : ""
               }`}
               href="#contact"
@@ -176,24 +176,24 @@ const Navbar: React.FC<NavbarProps> = ({isDarkMode, setIsDarkMode}) => {
           </div>
 
           <li>
-            <a className="font-Playfair" onClick={closeMenu} href="#top">
+            <a className="" onClick={closeMenu} href="#top">
               Home
             </a>
           </li>
           {/* <li><a className='font-Ovo' onClick={closeMenu} href="#about">About me</a></li>
                     <li><a className='font-Ovo' onClick={closeMenu} href="#services">Services</a></li> */}
           <li>
-            <a className="font-Playfair" onClick={closeMenu} href="#work">
+            <a className="" onClick={closeMenu} href="#work">
               My Work
             </a>
           </li>
           <li>
-            <a className="font-Playfair" onClick={closeMenu} href="#skills">
+            <a className="" onClick={closeMenu} href="#skills">
               Skills
             </a>
           </li>
           <li>
-            <a className="font-Playfair" onClick={closeMenu} href="#contact">
+            <a className="" onClick={closeMenu} href="#contact">
               Contact me
             </a>
           </li>

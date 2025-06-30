@@ -1,4 +1,4 @@
-import {Inter, Playfair_Display} from "next/font/google";
+import {Inter, Montserrat} from "next/font/google";
 import "./globals.css";
 import {Metadata} from "next";
 import {profile} from "./data";
@@ -8,9 +8,9 @@ const inter = Inter({
   weight: ["400", "500", "600", "700"],
 });
 
-const playfair = Playfair_Display({
+const montserrat = Montserrat({
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
+  weight: ["700"],
 });
 
 export const metadata: Metadata = {
@@ -55,7 +55,7 @@ export default function RootLayout({children}: RootLayoutProps) {
   return (
     <html lang="en" className="scroll-smooth dark">
       <body
-        className={`${inter.className} ${playfair.className} 
+        className={`${inter.className} ${montserrat.className} 
         antialiased 
         leading-8 
         overflow-x-hidden 

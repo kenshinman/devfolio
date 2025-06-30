@@ -31,7 +31,7 @@ const Header: React.FC<HeaderProps> = ({isDarkMode}) => {
         initial={{opacity: 0, y: -20}}
         whileInView={{opacity: 1, y: 0}}
         transition={{duration: 0.6, delay: 0.3}}
-        className="flex items-end gap-2 text-xl md:text-2xl mb-3 font-Playfair"
+        className="flex items-end gap-2 text-xl md:text-2xl mb-3"
       >
         Hi! I&apos;m {profile.name}
         <Image src={assets.hand_icon} alt="hand icon" className="w-6"></Image>
@@ -40,7 +40,7 @@ const Header: React.FC<HeaderProps> = ({isDarkMode}) => {
         initial={{opacity: 0, y: -30}}
         whileInView={{opacity: 1, y: 0}}
         transition={{duration: 0.8, delay: 0.3}}
-        className="text-3xl sm:text-6xl lg:text-[66px] font-Playfair "
+        className="text-3xl sm:text-6xl lg:text-[66px]"
       >
         {profile.title}
       </motion.h1>
@@ -48,7 +48,7 @@ const Header: React.FC<HeaderProps> = ({isDarkMode}) => {
         initial={{opacity: 0, y: -20}}
         whileInView={{opacity: 1, y: 0}}
         transition={{duration: 0.6, delay: 0.3}}
-        className="max-w-2xl mx-auto font-Playfair"
+        className="max-w-2xl mx-auto"
       >
         {profile.summary}
       </motion.p>

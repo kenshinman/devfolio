@@ -44,10 +44,10 @@ const Skills: React.FC<SkillsProps> = ({isDarkMode}) => {
 
   return (
     <div id="skills" className="w-full px-[12%] py-16 scroll-mt-20">
-      <h4 className="text-center mb-2 text-lg font-Playfair">My Expertise</h4>
-      <h2 className="text-center text-5xl font-Playfair">Tech Stack</h2>
+      <h4 className="text-center mb-2 text-lg">My Expertise</h4>
+      <h2 className="text-center text-5xl">Tech Stack</h2>
 
-      <p className="text-center max-w-2xl mx-auto mt-5 mb-12 font-Playfair">
+      <p className="text-center max-w-2xl mx-auto mt-5 mb-12">
         Here are the technologies and frameworks I work with to build amazing
         digital experiences.
       </p>

@@ -10,8 +10,8 @@ interface AboutProps {
 const About: React.FC<AboutProps> = ({isDarkMode}) => {
   return (
     <div className="w-full px-[12%] py-10 scroll-mt-20 min-h-screen" id="about">
-      <h4 className="text-center mb-2 text-lg font-Playfair">Introduction</h4>
-      <h2 className="text-center text-5xl font-Playfair">About me</h2>
+      <h4 className="text-center mb-2 text-lg">Introduction</h4>
+      <h2 className="text-center text-5xl">About me</h2>
 
       <div className="flex w-full flex-col lg:flex-row items-center gap-20 my-20">
         <div className="w-64 sm:w-80 rounded-3xl max:w-none">
@@ -23,7 +23,7 @@ const About: React.FC<AboutProps> = ({isDarkMode}) => {
         </div>
 
         <div className="flex-1">
-          <p className="mb-10 max-w-2xl font-Playfair">{profile.about}</p>
+          <p className="mb-10 max-w-2xl">{profile.about}</p>
 
           <ul className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl">
             {skills.languagesAndFrameworks.map(({name, icon}, index) => (
@@ -54,9 +54,7 @@ const About: React.FC<AboutProps> = ({isDarkMode}) => {
             ))}
           </ul>
 
-          <h4 className="my-6 text-gray-700 font-Ove dark:text-white/80">
-            Tools I use
-          </h4>
+          <h4 className="my-6 text-gray-700 dark:text-white/80">Tools I use</h4>
 
           <ul className="flex items-center gap-3 sm:gap-5">
             {tools.map((tool, index) => (
